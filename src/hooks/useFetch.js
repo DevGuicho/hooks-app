@@ -19,13 +19,20 @@ const useFetch = (url) => {
     fetch(url)
       .then((resp) => resp.json())
       .then((data) => {
-        if (isMounted) {
+        if (isMounted.current) {
           setstate({
             isLoading: false,
             error: null,
             data,
           });
         }
+      })
+      .catch(() => {
+        setstate({
+          data: null,
+          isLoading: false,
+          error: "No se pueden cargar la informacion",
+        });
       });
   }, [url]);
 

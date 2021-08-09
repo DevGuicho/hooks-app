@@ -1,5 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Padre } from "./components/07-tarea-memo/Padre";
+import MainApp from "./components/09-useContext/MainApp";
 
-ReactDOM.render(<Padre />, document.getElementById("root"));
+ReactDOM.render(<MainApp />, document.getElementById("root"));

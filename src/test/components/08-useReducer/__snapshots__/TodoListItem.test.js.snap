@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <TodoListItem /> debe mostrar el componente correctamente 1`] = `
+<tr
+  className=""
+  key="1"
+>
+  <th
+    scope="row"
+  >
+    1
+  </th>
+  <td
+    id="desc"
+  >
+    Hola Mundo
+  </td>
+  <td>
+    <button
+      className="btn btn-danger"
+      onClick={[Function]}
+      type="button"
+    >
+      Borrar
+    </button>
+  </td>
+  <td>
+    <div
+      className="form-check"
+    >
+      <input
+        checked={false}
+        className="form-check-input"
+        id="flexCheckChecked"
+        onChange={[Function]}
+        type="checkbox"
+        value=""
+      />
+    </div>
+  </td>
+</tr>
+`;
